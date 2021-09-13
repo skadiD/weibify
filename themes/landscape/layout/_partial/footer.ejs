@@ -1,0 +1,11 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %> <a id="icp" href="https://beian.miit.gov.cn/" target="blank"> </a> <br>
+      <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> | <a href="https://webify.cloudbase.net/" target="blank">CloudBase Webify 提供网站托管服务</a>
+    </div>
+  </div>
+</footer>
